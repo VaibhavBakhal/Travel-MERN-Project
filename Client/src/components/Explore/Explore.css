@@ -1,0 +1,58 @@
+w-explore {
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+.explore {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: -1;
+}
+.exploreImg {
+  width: 50vw;
+  height: 30vh;
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+.promotion {
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.explorenature {
+  color: #fff;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; /* 142.085% */
+}
+.containText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  position: absolute;
+  z-index: 1;
+  margin-top: -14rem;
+  margin-left: 17rem;
+}
+.containText button {
+  border: 2px solid #fff;
+  width: 10rem;
+  height: 3rem;
+  background: transparent;
+  color: white;
+  border-radius: 1rem;
+}
+.containText img {
+  width: 10rem;
+  height: 3rem;
+  margin-left: 15rem;
+  margin-top: -2rem;
+}

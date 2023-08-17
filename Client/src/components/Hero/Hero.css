@@ -1,0 +1,169 @@
+.Hero {
+  width: cover;
+  height: cover;
+  background: url("./HeroImg2.png") no-repeat;
+  /* background-size: 100% cover; */
+}
+.heroElements {
+  padding: 10rem 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.zigzig {
+  width: 2rem;
+}
+.heading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  gap: 10px;
+  padding-bottom: 2rem;
+}
+.searchItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  height: 4rem;
+  border-radius: 5.224px;
+  background: rgba(243, 243, 243, 0.6);
+  backdrop-filter: blur(17.760618209838867px);
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+}
+.styleDropdown,
+.selectStyle {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.selectStyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.styleDropdown {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.selectStyle {
+  padding-left: 1rem;
+  width: 15%;
+}
+.selectStyle::placeholder {
+  color: #fff;
+}
+
+.styleDropdown option:selected:checked {
+  color: white;
+}
+
+.spacer {
+  border-radius: 20px;
+  background: #d0d0d0;
+  width: 3px;
+  height: 40px;
+  flex-shrink: 0;
+  margin: 0 0.5rem;
+}
+/* .spacer1 {
+  margin: 0 0px;
+} */
+.buttonHero {
+  margin-right: 1rem;
+}
+
+.peopleBooked {
+  position: relative;
+  color: #fff;
+  /* padding-top: -5rem; */
+  padding-left: 2rem;
+}
+.totalPeople {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.imagesCircle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.imgCircle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: -15px;
+  z-index: 1;
+  border-radius: 35.997px;
+  border: 2.089px solid white;
+}
+
+.imgCircle:last-child {
+  margin-right: 0;
+}
+
+.imgSvg {
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.imageCircle {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+}
+.plusSpan {
+  margin-right: -3.15rem;
+}
+.peopleBooked {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 12.537px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37.611px;
+  display: flex;
+  align-items: unset;
+  margin-top: -1rem;
+  margin-left: -1.2rem;
+}

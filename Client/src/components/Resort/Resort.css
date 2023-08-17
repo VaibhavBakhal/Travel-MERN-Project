@@ -1,0 +1,280 @@
+.w-resort {
+  padding: 5rem 20rem;
+}
+.resort {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15rem;
+}
+/* left side */
+.leftResort {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.orange {
+  color: #df6951;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.booking {
+  color: #181e4b;
+  font-family: Volkhov;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: capitalize;
+}
+.point {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 124.5%;
+  margin-bottom: 1rem;
+}
+.desc {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+}
+.checkAvail {
+  margin-top: 1rem;
+}
+.choose {
+  display: flex;
+  flex-direction: column;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.steps img {
+  margin-top: 0.5rem;
+}
+
+/* right side  */
+.rightResort {
+  margin-top: 5rem;
+  margin-right: 12rem;
+  border-radius: 26px;
+  background: var(--white, #fff);
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.cardResort {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 30px;
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+}
+
+.image-containerResort {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.image-containerResort img {
+  width: 23rem;
+  height: 10rem;
+
+  border-radius: 30px;
+}
+
+.user-detailsResort h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.user-detailsResort p,
+.peopleResort {
+  color: var(--text-2, #84829a);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%; /* 19.92px */
+  letter-spacing: -0.08px;
+}
+.icon-rowResort {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  gap: 2.5rem;
+}
+.iconResort img {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  margin-left: 0.6rem;
+  z-index: 1;
+  margin-right: 5px;
+}
+.iconbackside {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #f1f0f0;
+  z-index: 1;
+}
+.iconResort {
+  display: flex;
+  align-items: center;
+}
+
+.heart-rowResort {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+.heartResort {
+  display: flex;
+  align-items: center;
+}
+.peopleResort {
+  padding-left: 1rem;
+}
+.heartResort span {
+  font-size: 20px;
+  color: red;
+  margin-left: 6rem;
+}
+
+/* ongoing trip */
+.ongoingtripresort {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.03),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.03),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 15rem;
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  position: absolute;
+  margin-top: -11rem;
+  margin-left: 14rem;
+}
+
+.leftongoingtrip img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100px;
+}
+.rightongoingtrip {
+  display: flex;
+  flex-direction: column;
+}
+.ongoingresort {
+  color: #84829a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%; /* 17.43px */
+  letter-spacing: -0.49px;
+  margin-bottom: 5px;
+}
+.triptorome {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%; /* 22.41px */
+  letter-spacing: -0.27px;
+  margin-bottom: 0.5rem;
+}
+.completed40 {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124.5%;
+  letter-spacing: -0.77px;
+}
+.meter {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+span.chart11 {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #f0f0f0; /* Gray background color for the whole line */
+  position: relative;
+  border-radius: 10px;
+}
+
+span.chart11 span {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background-color: #df6951; /* Red color for the progress */
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 100px;
+}
+span.chart11 span:before {
+  content: "\00a0";
+}
+
+.backgroundblur {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 367px;
+  opacity: 0.8;
+  background: #59b1e6;
+  filter: blur(75px);
+  position: absolute;
+  z-index: -1;
+  margin-top: -25rem;
+  margin-right: -10rem;
+}
+
+.airplane img {
+  width: 40rem;
+  height: 20rem;
+  position: absolute;
+  z-index: -2;
+  margin-top: -31rem;
+  margin-left: 11rem;
+  transform: scaleX(-1);
+}
+.rightResort .plus {
+  margin-top: -5rem;
+}
+.rightResort .plus .row1 {
+  margin-left: -3rem;
+  /* margin-top: 3rem; */
+}

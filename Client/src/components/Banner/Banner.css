@@ -1,0 +1,34 @@
+.w-banner {
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+.full-width-img {
+  width: 100vw;
+  height: 30vh;
+  transform: scaleX(-1);
+}
+
+.bannerText {
+  color: #fff;
+  font-family: Volkhov;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  text-transform: capitalize;
+}
+.textbannercontainer {
+  position: absolute;
+  z-index: 1;
+  margin-top: 6.8rem;
+  margin-left: 29rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannersvg {
+  width: 12rem;
+  margin-top: 1rem;
+  margin-left: 13rem;
+}

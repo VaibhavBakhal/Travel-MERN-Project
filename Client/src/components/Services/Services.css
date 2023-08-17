@@ -1,0 +1,126 @@
+.serviceSection {
+  text-align: center;
+  padding: 5rem 15rem;
+  transition: all 0.3s ease;
+}
+
+.category {
+  color: #df6951;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bestService {
+  margin-bottom: 20px;
+  color: #181e4b;
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.serviceCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem; /* Add gap between cards */
+}
+.contentImg {
+  position: relative;
+  transition: all 0.3s ease;
+}
+.card {
+  width: 15rem; /* Adjusted width */
+  height: 18rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100px; /* Adjusted image size */
+  height: 100px; /* Adjusted image size */
+  flex-shrink: 0;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 3;
+}
+.backDisplayImg {
+  height: 4rem;
+  width: 4rem;
+  background: #fff1da;
+  border-radius: 18px 0px 20px 5px;
+  position: absolute;
+  right: 23%;
+  top: 28%;
+  z-index: 2;
+}
+.card:hover .backDisplayImg {
+  right: 50%;
+  top: 18%;
+  border-radius: 18px 5px 10px 5px;
+  background: #fff1da;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.card span {
+  color: #1e1d4c;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin: -10px 0; /* Adjusted margin */
+  color: #5e6282;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1; /* Adjusted line-height */
+}
+.card .backImg {
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Position the backImg absolutely within the card */
+  bottom: -6rem; /* Position at the bottom of the card */
+  left: -7rem; /* Position at the left of the card */
+  display: none; /* Initially hide the backImg */
+  z-index: -1;
+}
+
+.card:hover .backImg {
+  display: block; /* Display the backImg on hover */
+}
+
+.card:hover {
+  border-radius: 36px;
+  background: #f0f0f0;
+  box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0),
+    0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01),
+    0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}

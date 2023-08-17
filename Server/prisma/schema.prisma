@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String        @id @default(auto()) @map("_id") @db.ObjectId
+  name              String?
+  email             String        @unique
+  image             String?
+  bookedVisits      Json[]
+  fevPackageID      String[]      @db.ObjectId
+  createdProperties String[]      @db.ObjectId
+  ownedProperties   PackageData[] @relation("Owner")
+}
+
+model PackageData {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  destination       String?  @default("")
+  rating            Int      @default(0)
+  price             Int      @default(1000)
+  departureDate     DateTime @default(now())
+  departureLocation String   @default("")
+  departureTime     String   @default("")
+  returnTime        String   @default("")
+  returnDate        DateTime @default(now())
+  dressCode         String   @default("")
+  notIncluded       String[] @default([])
+  included          String[] @default([])
+  images            String[] @default([])
+  imageDesc         String   @default("")
+  tourPlan          Json
+  userEmail         String   @default("")
+  owner             User     @relation("Owner", fields: [userEmail], references: [email])
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}

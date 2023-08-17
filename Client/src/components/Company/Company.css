@@ -1,0 +1,35 @@
+/* .Company {
+  padding: 1rem 20rem;
+  background: #e6e6e6;
+}
+.Companylogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.companyImg {
+  display: flex;
+  margin-top: 2rem;
+
+  width: 143.385px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #868686;
+} */
+.Company {
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  align-items: center; /* Center the logos vertically */
+  padding: 3rem;
+  background: #e6e6e6;
+}
+
+.Companylogo {
+  display: flex; /* This will make the logos flex items */
+  gap: 10rem; /* Gap between logos */
+}
+
+.companyImg {
+  max-width: 100px; /* Adjust the maximum width of the logo */
+}

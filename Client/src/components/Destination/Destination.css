@@ -1,0 +1,137 @@
+.w-Destination {
+  padding: 2rem 15rem 2rem 10rem;
+}
+.destination {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+}
+/* left side  */
+.leftDestination {
+  flex: 1;
+  display: flex;
+  align-items: center; /* Center vertically */
+  gap: 0;
+}
+
+.destination1 {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 15rem 15rem 0 0;
+  overflow: none;
+  border: 2px solid transparent;
+  padding: 1rem 1rem 0 0;
+  border-color: #a7327a #3b20fb #fff #fff; /* Top, Right, Bottom, Left */
+}
+.destination2 {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  border-radius: 100%;
+  margin-left: -17rem;
+  margin-top: -1rem;
+  z-index: 1;
+}
+.destination3 {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 100%;
+  margin-left: -30rem;
+  margin-top: -2rem;
+  z-index: 1;
+  /* border: 2px solid lightblue; */
+}
+.destination4 {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  border-radius: 100%;
+  margin-left: -32.6rem;
+  margin-top: 11rem;
+  z-index: 1;
+  box-shadow: 0px 56.41608428955078px 87.75835418701172px 0px
+    rgba(1, 22, 24, 0.24);
+}
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  color: lightgray;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-left: 10rem;
+  margin-bottom: -6rem;
+}
+.plus {
+  position: absolute;
+  margin-top: -7rem;
+  z-index: -1;
+}
+.row1 {
+  display: flex;
+  margin-left: 18rem;
+}
+
+.plusSign {
+  font-size: 1.1rem;
+  width: 2rem;
+  color: #e5e5e5;
+}
+.space {
+  position: relative;
+}
+.colorPlus {
+  color: #ff7152;
+}
+/* right side */
+.rightDestination {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 10rem;
+  padding-left: 5rem;
+}
+.Homeymoon {
+  color: #df6951;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.Romantic {
+  width: 35rem;
+  height: 5rem;
+  color: #181e4b;
+  font-family: Volkhov;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  padding-bottom: 8rem;
+}
+.rightDestinationText {
+  width: 36rem;
+  height: 2rem;
+  margin: -5px 0px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.rightDestination .button {
+  width: 10rem;
+  margin-top: 1rem;
+}
