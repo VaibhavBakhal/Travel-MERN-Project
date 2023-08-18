@@ -65,6 +65,7 @@ const Clients = () => {
           </Swiper>
         </div>
       </div>
+      <img className="clientcorner" src="clientcorner.png" alt="" />
     </div>
   );
 };

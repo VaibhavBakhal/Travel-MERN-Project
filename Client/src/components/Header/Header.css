@@ -19,7 +19,7 @@
   color: #fff;
   text-align: center;
   font-family: Volkhov;
-  font-size: 31.622px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -29,7 +29,7 @@
 .arrowIng {
   position: relative;
   width: 110px;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-left: 25px;
   transform: matrix(0.987606 -0.156951 -0.156951 -0.987606 3.66406 38.1797);
 }

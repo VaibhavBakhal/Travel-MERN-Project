@@ -15,6 +15,7 @@ import Explore from "./components/Explore/Explore";
 import Packages from "./components/Packages/Packages";
 import TrendingPackage from "./components/TrendingPackage/TrendingPackage";
 import Clients from "./components/Clinets/Clients";
+import Footer from "./components/Footer/Footer";
 // import TrendingPackage from "./components/Package/TrendingPackage";
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Explore />
       <TrendingPackage />
       <Clients />
+      <Footer />
     </div>
   );
 }

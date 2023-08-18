@@ -10,7 +10,7 @@ w-explore {
   z-index: -1;
 }
 .exploreImg {
-  width: 50vw;
+  width: 49vw;
   height: 30vh;
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
