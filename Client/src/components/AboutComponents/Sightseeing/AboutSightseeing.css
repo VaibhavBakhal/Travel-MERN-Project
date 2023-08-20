@@ -1,0 +1,59 @@
+.w-aboutSightseeing {
+  padding: 15rem 20rem;
+  margin-top: -4rem;
+}
+.aboutSightseeing {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10rem;
+}
+
+/* left side  */
+.leftAboutSightseeing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -5rem;
+}
+.leftAboutSightseeing span {
+  margin-top: 0rem;
+}
+.leftAboutSightseeing span:nth-child(3) {
+  margin: 2rem 0rem;
+}
+.leftAboutSightseeing button {
+  width: 10rem;
+}
+/* right side */
+.rightAboutSightseeing {
+  /* width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden; */
+}
+
+.rightAboutSightseeing img:nth-child(1) {
+  margin-top: -8rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 100%;
+  padding: 1rem;
+  border: 3px dashed #df6951;
+  object-fit: cover;
+}
+
+.backgroundimgabout {
+  position: absolute;
+  z-index: -1;
+  width: 35rem;
+  height: 35rem;
+  opacity: 0.16;
+  background: url(<path-to-image>),
+    #f8f8f8 -0.424px 0px / 100.099% 100% no-repeat;
+  margin-top: -10rem;
+  margin-left: -33rem;
+  transform: rotate(90.604deg);
+  flex-shrink: 0;
+}

@@ -1,0 +1,144 @@
+.w-gridimg {
+  padding: 5rem 15rem 5rem 15rem;
+}
+.gridheadings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridheadings .blue {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border: none;
+}
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  margin-right: 0rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: end;
+  padding-bottom: 1rem;
+  transition: all 300ms ease-in;
+}
+.grid-item:hover {
+  transform: scale(1.1);
+}
+.grid-item span {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.grid-item.item3 {
+  grid-row: span 2; /* This spans the item across two rows */
+  grid-column: 3; /* This places the item in column 3 */
+  margin-top: 0;
+}
+.grid1 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid1.png");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid2 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid2.png");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid3 {
+  width: 20rem;
+  height: 42rem;
+  background: url("grid3.jpg");
+
+  background-size: 25rem 52rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0rem;
+}
+.grid4 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid4.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid5 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid5.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid6 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid6.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid7 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid7.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid8 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid8.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid9 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid9.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid10 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid10.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+.grid11 {
+  width: 20rem;
+  height: 20rem;
+  background: url("grid11.jpg");
+  background-size: 25rem 25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}

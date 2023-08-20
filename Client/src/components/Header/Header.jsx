@@ -7,14 +7,20 @@ const Header = () => {
       <div className="h-container">
         <div className="headerLeft">
           <div className="column">
-            <div className="travel">Travel</div>
-            <img src="./arrow.svg" alt="arrow" className="arrowIng" />
+            <Link to="/">
+              <div className="travel">Travel</div>
+              <img src="./arrow.svg" alt="arrow" className="arrowIng" />
+            </Link>
           </div>
         </div>
         <div className="headerMiddle">
           <div className="row">
-            <div className="style">Home</div>
-            <div className="style">About</div>
+            <NavLink to="/" className="style">
+              Home
+            </NavLink>
+            <NavLink to="/about" className="style">
+              About
+            </NavLink>
             <div className="style dropdown">
               Services
               <div className="dropdown-content">

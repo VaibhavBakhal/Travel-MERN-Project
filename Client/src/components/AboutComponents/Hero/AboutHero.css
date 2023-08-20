@@ -1,0 +1,33 @@
+.w-aboutHero {
+  width: 100vw;
+  height: 45vh;
+  background-image: url("./about1.1.jpg");
+  background-size: 100vw 45vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutustext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.aboutustext span:nth-child(1) {
+  color: #ffefec;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: -2rem;
+}
+.aboutustext span:nth-child(2) {
+  color: #fff;
+  font-family: Yesteryear;
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.085%;
+}
