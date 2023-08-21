@@ -24,10 +24,58 @@ const Header = () => {
             <div className="style dropdown">
               Services
               <div className="dropdown-content">
-                <div>Honeymoon Packages</div>
-                <div>Tours Packages</div>
-                <div>Musical Events</div>
-                <div>Build Package</div>
+                <NavLink
+                  to="/honeymoon"
+                  className="styledropdown"
+                  state={
+                    {
+                      span1: "Search Honeymoon Tour",
+                      span2: "Travel With us",
+                      background1: "./honeymoon.png",
+                    } // You can pass any data here
+                  }
+                >
+                  Honeymoon Packages
+                </NavLink>
+                <NavLink
+                  to="/packages"
+                  className="styledropdown"
+                  state={
+                    {
+                      span1: "Search Tour",
+                      span2: "Travel With us",
+                      background1: "./honeymoon.png",
+                    } // You can pass any data here
+                  }
+                >
+                  Tours Packages
+                </NavLink>
+                <NavLink
+                  to="/events"
+                  className="styledropdown"
+                  state={
+                    {
+                      span1: "Search Events Tour",
+                      span2: "Travel With us",
+                      background1: "./honeymoon.png",
+                    } // You can pass any data here
+                  }
+                >
+                  Musical Events
+                </NavLink>
+                <NavLink
+                  to="/makeyourownpackage"
+                  className="styledropdown"
+                  state={
+                    {
+                      span1: "create your own Tour",
+                      span2: "Travel With us",
+                      background1: "./honeymoon.png",
+                    } // You can pass any data here
+                  }
+                >
+                  Build Package
+                </NavLink>
               </div>
               <div className="dropdownSvg">
                 <img src="./dropdown.svg" alt="svg" />

@@ -7,6 +7,8 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import About from "./pages/About/About";
+import Layout from "./components/Layout/Layout";
+import Packages from "./components/Packages/Packages";
 // import TrendingPackage from "./components/Package/TrendingPackage";
 function App() {
   const queryClient = new QueryClient();
@@ -22,6 +24,15 @@ function App() {
           <Routes>
             <Route path="/" element={<Website />} />
             <Route path="/about" element={<About />} />
+
+            {/* <Route index element={<Properties />} />
+              <Route path=":propertyId" element={<Property />} /> */}
+            <Route element={<Layout />}>
+              <Route path="/honeymoon"></Route>
+              <Route path="/packages" element={<Packages />}></Route>
+              <Route path="/events"></Route>
+              <Route path="/makeyourownpackage"></Route>
+            </Route>
           </Routes>
         </Suspense>
       </BrowserRouter>

@@ -1,13 +1,16 @@
 import React from "react";
 import "./AboutHero.css";
 import Header from "../../Header/Header";
-const AboutHero = () => {
+const AboutHero = ({ span1, span2, background1 }) => {
   return (
-    <div className="w-aboutHero">
+    <div
+      className="w-aboutHero"
+      style={{ backgroundImage: `url(${background1})` }}
+    >
       <Header />
       <div className="aboutustext">
-        <span>READ</span>
-        <span>About Us</span>
+        <span>{span1}</span>
+        <span>{span2}</span>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import Explore from "../components/Explore/Explore";
 import TrendingPackage from "../components/TrendingPackage/TrendingPackage";
 import Clients from "../components/Clinets/Clients";
 import Footer from "../components/Footer/Footer";
+import Element from "../components/element/Element";
 
 const Website = () => {
   return (
@@ -25,6 +26,7 @@ const Website = () => {
       <TrendingPackage />
       <Clients />
       <Footer />
+      {/* <Element /> */}
     </div>
   );
 };

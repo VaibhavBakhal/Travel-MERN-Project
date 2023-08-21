@@ -1,0 +1,90 @@
+.w-element {
+  gap: 0.6rem;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 25rem;
+  margin: auto;
+  transition: all 300ms ease-in;
+  position: relative;
+  z-index: 0;
+}
+
+.elementcard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 300ms ease-in;
+  /* margin-left: 1rem; */
+}
+.elementcard > img:nth-child(1) {
+  border-radius: 2rem 2rem 0rem 0rem;
+  width: 23rem;
+  height: 16rem;
+}
+.peoplecard {
+  background: #df6951;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.peoplecard .dates,
+.peoplecard .peoplevisiting {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+}
+.dates,
+.peoplevisiting {
+  margin: 0rem 1rem 0rem 1rem;
+}
+.dates span,
+.peoplevisiting span {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.bluecolor {
+  color: #181e4b;
+  font-family: Volkhov;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.elementcarddesc {
+  margin-left: 1rem;
+}
+.ratingamount {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.ratingamount .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* .rating img {
+
+} */
+.elementcard:hover {
+  border-radius: 21px;
+  background: #fff;
+  box-shadow: 0px 4.3246378898620605px 51.895652770996094px 12.973913192749023px
+    rgba(0, 0, 0, 0.09);
+  transform: scale(1.1);
+}
