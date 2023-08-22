@@ -1,8 +1,10 @@
 import React from "react";
 import "./element.css";
 import dayjs from "dayjs";
+import { useNavigate } from "react-router-dom";
+
 const Element = ({ card }) => {
-  // const date = dayjs(card.departureDate);
+  const navigate = useNavigate();
   const formattedDate = dayjs(card.departureDate)
     .locale("en")
     .format("DD MMMM YYYY");
@@ -11,7 +13,10 @@ const Element = ({ card }) => {
     // "https://asset.cloudinary.com/dmduftwz1/c68584e36da64545a94dc3e6e54b2661";
     "https://res.cloudinary.com/dmduftwz1/image/upload/v1691432981/yugzfwe7xxuvu4b5n2ml.jpg";
   return (
-    <div className="w-element">
+    <div
+      className="w-element"
+      onClick={() => navigate(`../packages/${card.id}`)}
+    >
       <div className="elementcard">
         <img src={element} alt="" />
         <div className="peoplecard">

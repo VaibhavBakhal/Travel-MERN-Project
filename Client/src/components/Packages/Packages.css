@@ -32,7 +32,6 @@
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  /* Add equal width and height to create a square container */
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
@@ -45,9 +44,6 @@
 .pagination li {
   cursor: pointer;
   margin: 0px 10px;
-  /* padding-left: 6px; */
-  /* width: 36px; */
-  /* height: 36px; */
 }
 .pagination li.active {
   background-color: lightgray; /* Background color */
@@ -74,7 +70,86 @@
   text-transform: capitalize;
 }
 
-.mantine-date-range-picker button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.datePickerPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* Place above overlay */
+  display: none; /* Hide the popup by default */
+}
+.DateRangePicker {
+  /* Your existing styles for the date picker container */
+}
+
+.DateRangePickerPicker {
+  /* Your existing styles for the date picker calendar */
+}
+
+/* Style the Apply Date Filter button */
+.DateRangePicker .rdrStaticRangesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px; /* Add spacing above the button */
+}
+
+.DateRangePicker .rdrStaticRangeLabelWrapper {
+  margin-bottom: 18px; /* Add spacing between static ranges and button */
+}
+
+.DateRangePicker .applyButton {
+  background-color: #df6951;
+  color: #df6951;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.DateRangePicker .applyButton:hover {
+  background-color: #df6951;
+}
+
+/* Adjust the positioning of the calendar and button */
+.DateRangePicker .rdrDateDisplayWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px; /* Add spacing below the calendar */
+}
+
+/* Ensure the button doesn't affect the calendar's layout */
+.DateRangePicker .rdrDateDisplayWrapper .rdrDateDisplay {
+  margin-bottom: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 1000; /* Place above content */
+  display: none; /* Hide the overlay by default */
+}
+
+.overlay.show {
+  display: block; /* Show the overlay when the class "show" is added */
+}
+
+.datePickerPopup.show {
+  display: block; /* Show the popup when the class "show" is added */
+}
+.datepickerbutton {
+  position: absolute;
+  align-items: center;
+  margin-top: 21rem;
+  margin-left: -15rem;
 }
