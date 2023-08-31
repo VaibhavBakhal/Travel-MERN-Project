@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import About from "./pages/About/About";
 import Layout from "./components/Layout/Layout";
 import Packages from "./components/Packages/Packages";
+import Package from "./pages/package/Package";
 // import TrendingPackage from "./components/Package/TrendingPackage";
 function App() {
   const queryClient = new QueryClient();
@@ -29,7 +30,10 @@ function App() {
               <Route path=":propertyId" element={<Property />} /> */}
             <Route element={<Layout />}>
               <Route path="/honeymoon"></Route>
-              <Route path="/packages" element={<Packages />}></Route>
+              <Route path="/packages">
+                <Route index element={<Packages />} />
+                <Route path=":packageId" element={<Package />} />
+              </Route>
               <Route path="/events"></Route>
               <Route path="/makeyourownpackage"></Route>
             </Route>

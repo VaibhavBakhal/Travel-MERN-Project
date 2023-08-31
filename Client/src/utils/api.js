@@ -20,3 +20,19 @@ export const getAllPackages = async () => {
     throw error;
   }
 };
+
+export const getPackage = async (id) => {
+  try {
+    const response = await api.get(`/package/${id}`, {
+      timeout: 10 * 1000,
+    });
+    if (response.status === 400 || response.status === 500) {
+      throw response.data;
+    }
+
+    return response.data;
+  } catch (error) {
+    toast.error("Something Went Wrong");
+    throw error;
+  }
+};

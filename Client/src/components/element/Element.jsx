@@ -12,10 +12,20 @@ const Element = ({ card }) => {
   const element =
     // "https://asset.cloudinary.com/dmduftwz1/c68584e36da64545a94dc3e6e54b2661";
     "https://res.cloudinary.com/dmduftwz1/image/upload/v1691432981/yugzfwe7xxuvu4b5n2ml.jpg";
+  const navigateWithState = () => {
+    navigate(`../packages/${card.id}`, {
+      state: {
+        span1: "Search Honeymoon Tour",
+        span2: "Travel With us",
+        background1: "./elementbackground.jpg",
+      },
+    });
+  };
   return (
     <div
       className="w-element"
-      onClick={() => navigate(`../packages/${card.id}`)}
+      // onClick={() => navigate(`../packages/${card.id}`)}
+      onClick={navigateWithState}
     >
       <div className="elementcard">
         <img src={element} alt="" />
