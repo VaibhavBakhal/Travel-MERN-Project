@@ -5,6 +5,7 @@ import prisma from "../config/PrismaConfig.js";
 export const createPackageData = asyncHandler(async (req, res) => {
   const {
     destination,
+    desc,
     rating,
     price,
     departureDate,
@@ -25,6 +26,7 @@ export const createPackageData = asyncHandler(async (req, res) => {
     const packageData = await prisma.packageData.create({
       data: {
         destination,
+        desc,
         rating,
         price,
         departureDate,

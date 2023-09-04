@@ -21,6 +21,7 @@ model User {
 model PackageData {
   id                String   @id @default(auto()) @map("_id") @db.ObjectId
   destination       String?  @default("")
+  desc              String   @default("")
   rating            Int      @default(0)
   price             Int      @default(1000)
   departureDate     DateTime @default(now())
