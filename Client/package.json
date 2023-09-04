@@ -12,6 +12,7 @@
   "dependencies": {
     "@mantine/core": "^6.0.19",
     "@mantine/dates": "^6.0.19",
+    "@tabler/icons-react": "^2.32.0",
     "axios": "^1.4.0",
     "date-fns": "^2.30.0",
     "dayjs": "^1.11.9",
@@ -19,6 +20,9 @@
     "react": "^18.2.0",
     "react-date-range": "^1.4.0",
     "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.11",
+    "react-icons": "^4.10.1",
+    "react-native-beautiful-timeline": "^1.0.1",
     "react-paginate": "^8.2.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.15.0",

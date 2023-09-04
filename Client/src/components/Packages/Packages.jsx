@@ -8,11 +8,13 @@ import ReactPaginate from "react-paginate";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css"; // Main style file
 import "react-date-range/dist/theme/default.css"; // Theme CSS file
+import { NavLink } from "react-router-dom";
 
 const Packages = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [filter, setFilter] = useState("");
   const { data, isError, isLoading } = useProperties();
+  const [price, setPrice] = useState(1500);
   const [selectedDateRange, setSelectedDateRange] = useState([
     {
       startDate: new Date(),
@@ -23,6 +25,10 @@ const Packages = () => {
   const [isDatePickerVisible, setDatePickerVisible] = useState(false); // Added state
   const [isOverlayVisible, setOverlayVisible] = useState(false); // Added state for overlay
 
+  const handlePriceChange = (event) => {
+    // Step 3: Update the state variable based on user input
+    setPrice(event.target.value);
+  };
   const applyDateFilter = () => {
     const startDate = selectedDateRange[0].startDate;
     const endDate = selectedDateRange[0].endDate;
@@ -91,7 +97,7 @@ const Packages = () => {
   const sortedData = applyFilter(); // Apply sorting and filtering
 
   // Pagination code
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const pageCount = Math.ceil(sortedData.length / itemsPerPage);
 
   const handlePageChange = (selectedPage) => {
@@ -177,10 +183,73 @@ const Packages = () => {
           </button>
         </div>
       )}
-      <div className="paddings flexCenter packages">
-        {itemsToShow.map((card, i) => (
-          <Element card={card} key={i} />
-        ))}
+      <div className="paddings  packages">
+        <div className="cards">
+          {itemsToShow.map((card, i) => (
+            <NavLink
+              key={i}
+              to={`../packages/${card.id}`}
+              className="styledropdown1"
+              state={{
+                span1: "Explore",
+                span2: "Landscape",
+                background1: "/elementbackground.jpg",
+              }}
+            >
+              <Element card={card} key={i} />
+            </NavLink>
+          ))}
+        </div>
+        <div className="planyourtrip ">
+          <form action="" className="flexColCenter bookingform">
+            <span className="blue">Plan Your Trip</span>
+            <span className="bookingtext">
+              Ex optio sequi et quos praesentium in nostrum labore nam rerum
+              iusto aut magni nesciunt? Quo quidem neque iste expedita est dolo.
+            </span>
+            <div className="form-group">
+              <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Country"
+                className="whereto"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Where to?"
+                className="whereto"
+              />
+            </div>{" "}
+            <div className="form-group">
+              <input type="date" id="date" name="date" className="whereto" />
+            </div>
+            <div className="form-group">
+              <span className="filterbyprice">Filter by price</span>
+              <br />
+              <input
+                type="range"
+                className="pricerange"
+                id="points"
+                name="points"
+                min="500"
+                max="5000"
+                step="100" // You can adjust the step value to control increments
+                value={price} // Bind the input value to the state variable
+                onChange={handlePriceChange} // Step 2: Attach the event handler
+              />
+              <br />
+              <label htmlFor="points">${price}</label>
+            </div>
+            <div className="form-group">
+              <input className="button" type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
       </div>
       <ReactPaginate
         previousLabel={"<"}

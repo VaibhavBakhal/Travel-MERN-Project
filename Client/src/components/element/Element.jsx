@@ -1,7 +1,7 @@
 import React from "react";
 import "./element.css";
 import dayjs from "dayjs";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Element = ({ card }) => {
   const navigate = useNavigate();

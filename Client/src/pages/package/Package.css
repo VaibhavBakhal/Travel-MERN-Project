@@ -1,0 +1,147 @@
+.describepackage {
+  position: relative;
+}
+.perticularpackage {
+  gap: 13rem;
+  background: #f8f8f8;
+  padding: 1.2rem;
+  margin-top: -97.5rem;
+  position: absolute;
+  width: 84rem;
+}
+.datadesc,
+.blackdetails {
+  color: var(--black, #000);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  margin-top: 0.5rem;
+}
+.databooking {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.packageinfo {
+  width: 48rem;
+}
+.orangedetails {
+  color: #df6951;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 20rem;
+}
+.information {
+  margin-top: 5rem;
+}
+.countryprice {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.percouple {
+  margin-left: -4.5rem;
+  margin-top: 0.6rem;
+  color: #7d7d7d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.rating1 {
+  color: var(--TEXT-CLR, #5e6282);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.desc1 {
+  margin-top: 3rem;
+}
+
+.moredetails {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+.itinerary-card {
+  text-align: left;
+  margin-top: 3rem;
+}
+.items2 {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* height: 5rem; */
+  align-items: center;
+  text-align: center;
+}
+.iconspan {
+  margin-top: -1rem;
+}
+.fromgallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fromgallery .blue {
+  font-size: 50px;
+}
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top-row img,
+.bottom-row img {
+  margin: 5px; /* Add margin for spacing between images */
+  width: 15rem;
+  height: 15rem;
+}
+.bookingpackage {
+  margin-top: 5rem;
+  width: 30rem;
+  background: #ededed;
+  height: 60rem;
+}
+.bookingpackage form {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.bookingpackage form input,
+.bookingpackage form textarea {
+  margin-top: 1rem;
+  width: 25rem;
+  height: 5rem;
+}
+.bookingbutton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: center;
+}

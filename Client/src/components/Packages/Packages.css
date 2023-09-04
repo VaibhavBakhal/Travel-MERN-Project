@@ -154,3 +154,83 @@
   margin-top: 21rem;
   margin-left: -15rem;
 }
+.packages {
+  /* margin-left: -28rem; */
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10rem; */
+  align-items: flex-start;
+}
+/* .cards {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
+} */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.planyourtrip {
+  max-width: 25rem;
+  background: #ededed;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+.bookingform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
+}
+form .blue {
+  margin-top: 1rem;
+}
+.bookingtext {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.whereto {
+  background: #fff;
+  border: none;
+  height: 3rem;
+  width: 15rem;
+  display: flex;
+  text-align: center;
+}
+.pricerange {
+  /* color: #df6951; */
+  width: 15rem;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: silver;
+  width: 200px;
+  height: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #df6951;
+  /* opacity: 0.5; */
+  width: 10px;
+  height: 26px;
+}
+.filterbyprice {
+  color: #343434;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
